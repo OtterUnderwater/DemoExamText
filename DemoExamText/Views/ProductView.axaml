@@ -1,0 +1,50 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:vm="using:DemoExamText.ViewModels"
+			 xmlns:conv="using:DemoExamText.Converters"
+			 x:Class="DemoExamText.Views.ProductView"
+			 x:DataType="vm:ProductViewModel">
+	<UserControl.Resources>
+		<conv:ImageConvert x:Key="imgConv"/>
+	</UserControl.Resources>
+	
+	<Grid>
+		<ScrollViewer>
+			<StackPanel>
+				<ComboBox ItemsSource="{Binding SortList}" SelectedIndex="{Binding SortIndex}"/>
+				<ComboBox ItemsSource="{Binding TypeList}" SelectedItem="{Binding SelectedType}">
+					<ComboBox.ItemTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding Type1}"/>
+						</DataTemplate>
+					</ComboBox.ItemTemplate>
+				</ComboBox>
+			<ListBox ItemsSource="{Binding Tours}">
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<StackPanel>
+								<TextBlock Text="{Binding Name}"/>
+								<Image Width="200" Height="200" Source="{Binding ImagePreview, Converter={StaticResource imgConv}}"/>
+								<ItemsRepeater ItemsSource="{Binding ToursTypes}">
+									<ItemsRepeater.ItemTemplate>
+										<DataTemplate>
+											<TextBlock Text="{Binding Type.Type1}" />
+										</DataTemplate>
+									</ItemsRepeater.ItemTemplate>
+								</ItemsRepeater>
+								<Button Content="Удалить"
+										Command="{Binding $parent[UserControl]((vm:ProductViewModel)DataContext).Delete}"
+										CommandParameter="{Binding}"/>
+							</StackPanel>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+				<Button Content="Назад" Command="{Binding Back}"/>
+				<Button Content="Вперед" Command="{Binding Next}"/>
+			</StackPanel>
+		</ScrollViewer>
+	</Grid>
+</UserControl>

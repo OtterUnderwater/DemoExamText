@@ -1,14 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http.Json;
-using System.Net.Http;
 using System.Threading.Tasks;
 using DemoExamText.Models;
-using DemoExamText.Views;
 using Microsoft.EntityFrameworkCore;
 using MsBox.Avalonia.Enums;
 using MsBox.Avalonia;
 using ReactiveUI;
+using DemoExamText.Views;
 
 namespace DemoExamText.ViewModels
 {
@@ -23,7 +21,6 @@ namespace DemoExamText.ViewModels
 		string search = "";
 		int _countOnPage = 20;
 		int _currentPage = 0;
-
 		public List<Tour> Tours { get => tours; set =>  this.RaiseAndSetIfChanged(ref tours, value); }
 		public List<Tour> ListTours { get => listTours; set => this.RaiseAndSetIfChanged(ref listTours, value); }
 		public List<Tour> FilterList { get => filterList; set => this.RaiseAndSetIfChanged(ref filterList, value); }
@@ -31,8 +28,7 @@ namespace DemoExamText.ViewModels
 		public List<string> SortList => ["без сортировки", "по возрастанию цены", "по убыванию цены"];	
 		public int SortIndex { get => sortIndex; set { sortIndex = value; Filter(); } }
 		public string Search { get => search; set { search = value; Filter(); } }
-		public Type SelectedType { get => selectedType; set { this.RaiseAndSetIfChanged(ref selectedType, value); Filter(); } }
-		
+		public Type SelectedType { get => selectedType; set { this.RaiseAndSetIfChanged(ref selectedType, value); Filter(); } }	
 		public ProductViewModel()
 		{
 			Update();
@@ -74,7 +70,9 @@ namespace DemoExamText.ViewModels
 				_currentPage++;
 				UpdateTours();
 			}
-		}	
+		}
+		public void Create() => MainWindowViewModel.Instance.CurrentPage = new NewProductView();
+		public void Edit(Tour tour) => MainWindowViewModel.Instance.CurrentPage = new NewProductView(tour);
 		public async void Delete(Tour tour)
 		{
 			bool answer = await Message();
@@ -86,7 +84,6 @@ namespace DemoExamText.ViewModels
 				Update();
 			}
 		}
-
 		private async Task<bool> Message()
 		{
 			ButtonResult answer = await MessageBoxManager.GetMessageBoxStandard("”даление", "¬ы уверены, что хотите удалить продукт?", ButtonEnum.YesNo).ShowAsync();

@@ -3,11 +3,12 @@
   "WorkspaceRootPath": "E:\\otter\\avalonia\\DemoExamText\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5592AAE1-5749-4EAC-8464-B9E594D98A2B}|DemoExamText\\DemoExamText.csproj|e:\\otter\\avalonia\\demoexamtext\\demoexamtext\\viewmodels\\newproductviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5592AAE1-5749-4EAC-8464-B9E594D98A2B}|DemoExamText\\DemoExamText.csproj|solutionrelative:demoexamtext\\viewmodels\\newproductviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5592AAE1-5749-4EAC-8464-B9E594D98A2B}|DemoExamText\\DemoExamText.csproj|e:\\otter\\avalonia\\demoexamtext\\demoexamtext\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5592AAE1-5749-4EAC-8464-B9E594D98A2B}|DemoExamText\\DemoExamText.csproj|solutionrelative:demoexamtext\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5592AAE1-5749-4EAC-8464-B9E594D98A2B}|DemoExamText\\DemoExamText.csproj|e:\\otter\\avalonia\\demoexamtext\\demoexamtext\\views\\newproductview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{5592AAE1-5749-4EAC-8464-B9E594D98A2B}|DemoExamText\\DemoExamText.csproj|solutionrelative:demoexamtext\\views\\newproductview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,25 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAALgUAAAAAAAAAAAIwMkUAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-02-18T03:51:19.077Z",
+              "Title": "NewProductViewModel.cs",
+              "DocumentMoniker": "E:\\otter\\avalonia\\DemoExamText\\DemoExamText\\ViewModels\\NewProductViewModel.cs",
+              "RelativeDocumentMoniker": "DemoExamText\\ViewModels\\NewProductViewModel.cs",
+              "ToolTip": "E:\\otter\\avalonia\\DemoExamText\\DemoExamText\\ViewModels\\NewProductViewModel.cs",
+              "RelativeToolTip": "DemoExamText\\ViewModels\\NewProductViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T22:03:00.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductViewModel.cs",
-              "DocumentMoniker": "E:\\otter\\avalonia\\DemoExamText\\DemoExamText\\ViewModels\\ProductViewModel.cs",
-              "RelativeDocumentMoniker": "DemoExamText\\ViewModels\\ProductViewModel.cs",
-              "ToolTip": "E:\\otter\\avalonia\\DemoExamText\\DemoExamText\\ViewModels\\ProductViewModel.cs",
-              "RelativeToolTip": "DemoExamText\\ViewModels\\ProductViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T03:40:47.227Z",
+              "Title": "NewProductView.axaml",
+              "DocumentMoniker": "E:\\otter\\avalonia\\DemoExamText\\DemoExamText\\Views\\NewProductView.axaml",
+              "RelativeDocumentMoniker": "DemoExamText\\Views\\NewProductView.axaml",
+              "ToolTip": "E:\\otter\\avalonia\\DemoExamText\\DemoExamText\\Views\\NewProductView.axaml",
+              "RelativeToolTip": "DemoExamText\\Views\\NewProductView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-18T22:02:06.869Z",
               "EditorCaption": ""
             }
           ]

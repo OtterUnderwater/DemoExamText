@@ -153,3 +153,4 @@ E:\otter\avalonia\DemoExamText\DemoExamText\bin\Debug\net9.0\zh-Hant\Microsoft.C
 E:\otter\avalonia\DemoExamText\DemoExamText\bin\Debug\net9.0\Avalonia.Controls.ItemsRepeater.dll
 E:\otter\avalonia\DemoExamText\DemoExamText\bin\Debug\net9.0\DialogHost.Avalonia.dll
 E:\otter\avalonia\DemoExamText\DemoExamText\bin\Debug\net9.0\MsBox.Avalonia.dll
+E:\otter\avalonia\DemoExamText\DemoExamText\obj\Debug\net9.0\DemoExamText.sourcelink.json

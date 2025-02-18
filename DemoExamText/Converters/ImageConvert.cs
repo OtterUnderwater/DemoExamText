@@ -13,7 +13,7 @@ namespace DemoExamText.Converters
 		{
 			return (value == null || value == "") ?
 				new Bitmap(AssetLoader.Open(new Uri("avares://DemoExamText/Assets/picture.jpg"))):
-				new Bitmap(AssetLoader.Open(new Uri($"avares://DemoExamText/Assets/{value}")));
+				new Bitmap(AssetLoader.Open(new Uri($"avares://DemoExamText/Assets/{System.Convert.ToString(value).Trim()}")));
 		}
 
 		public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)

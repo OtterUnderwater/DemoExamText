@@ -14,7 +14,8 @@
 	<Grid>
 		<ScrollViewer>
 			<StackPanel>
-				<ComboBox ItemsSource="{Binding SortList}" SelectedIndex="{Binding SortIndex}"/>
+				<Button Content="Добавить материал" Command="{Binding Create}"/>
+				<ComboBox ItemsSource="{Binding SortList}" SelectedIndex="{Binding SortIndex}"/>				
 				<ComboBox ItemsSource="{Binding TypeList}" SelectedItem="{Binding SelectedType}">
 					<ComboBox.ItemTemplate>
 						<DataTemplate>
@@ -22,7 +23,7 @@
 						</DataTemplate>
 					</ComboBox.ItemTemplate>
 				</ComboBox>
-			<ListBox ItemsSource="{Binding Tours}">
+				<ListBox ItemsSource="{Binding Tours}">
 					<ListBox.ItemTemplate>
 						<DataTemplate>
 							<StackPanel>
@@ -37,6 +38,9 @@
 								</ItemsRepeater>
 								<Button Content="Удалить"
 										Command="{Binding $parent[UserControl]((vm:ProductViewModel)DataContext).Delete}"
+										CommandParameter="{Binding}"/>
+								<Button Content="Редактировать"
+										Command="{Binding $parent[UserControl]((vm:ProductViewModel)DataContext).Edit}"
 										CommandParameter="{Binding}"/>
 							</StackPanel>
 						</DataTemplate>
